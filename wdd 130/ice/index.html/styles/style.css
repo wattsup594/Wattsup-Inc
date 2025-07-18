@@ -146,6 +146,12 @@ h1 {
   transform: scale(1.05);
 }
 
+.para {
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
 /* About Section */
 .about {
   background-color: var(--light-gray);
