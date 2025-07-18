@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rivers - Dry Oar Adventures</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    .river-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      align-items: center;
+    }
+    .river-card {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+    }
+    .river-card img {
+      width: 100%;
+      max-width: 315px;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .river-card h2 {
+      color: #55d5f1;
+      margin-top: 0;
+    }
+    .river-card .button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #710a35;
+      color: #e0e0e0;
+      padding: 0.5rem 1.25rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .river-card .button:hover {
+      background-color: #e0e0e0;
+      color: #0f0f0f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" id="logo_link"><img src="images/logo.png" alt="Logo" class="logo"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Adventures</a>
+      <a href="site-plan-rafting.html">Plan</a>
+      <a href="contactus.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="msg">
+      <h1>Explore the Rivers</h1>
+      <p>Experience the beauty and thrill of river rafting. Our guided trips offer safety, fun, and unforgettable views along the most scenic waterways.</p>
+    </section>
+
+    <section class="river-list">
+      <div class="river-card">
+        <img src="images/colorado_river.avif" alt="Colorado River">
+        <h2>Colorado River</h2>
+        <p>Raft through the iconic canyons and enjoy scenic views and exciting rapids.</p>
+        <a class="button" href="rates.html">Book Now</a>
+      </div>
+
+      <div class="river-card">
+        <img src="images/snake_river.jpg" alt="Snake River">
+        <h2>Snake River</h2>
+        <p>Perfect for beginners and families. Calm waters with a few exciting turns.</p>
+        <a class="button" href="rates.html">Book Now</a>
+      </div>
+
+      <div class="river-card">
+        <img src="images/salmon_river.jpg" alt="Salmon River">
+        <h2>Salmon River</h2>
+        <p>A remote and rugged experience for the adventurous soul, deep in Idaho wilderness.</p>
+        <a class="button" href="rates.html">Book Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dry Oar &copy; 2025 - Kaden Watts</p>
+  </footer>
+</body>
+</html>

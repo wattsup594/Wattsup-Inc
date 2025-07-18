@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dry Oar Adventures</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    .contact-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      color: #e0e0e0;
+    }
+    .contact-container h1 {
+      color: #55d5f1;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .contact-container form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-container label {
+      margin-top: 1rem;
+    }
+    .contact-container input,
+    .contact-container textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      margin-top: 0.25rem;
+      background-color: #2c2c2c;
+      color: #e0e0e0;
+    }
+    .contact-container textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .contact-container button {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      background-color: #710a35;
+      color: #e0e0e0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact-container button:hover {
+      background-color: #e0e0e0;
+      color: #0f0f0f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" id="logo_link">
+      <img src="images/logo.png" alt="Dry Oar Logo" class="logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Adventures</a>
+      <a href="site-plan-rafting.html">Plan</a>
+      <a href="contactus.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>Have questions or want to book a trip? Reach out and we’ll get back to you as soon as possible.</p>
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Dry Oar &copy; 2025 - Kaden Watts</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camping - Dry Oar Adventures</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    .camping-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .camp-card {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .camp-card img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+    .camp-card h2 {
+      color: #55d5f1;
+      margin-top: 0;
+    }
+    .camp-card p {
+      margin: 1rem 0;
+    }
+    .camp-card .button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #710a35;
+      color: #e0e0e0;
+      padding: 0.5rem 1.25rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .camp-card .button:hover {
+      background-color: #e0e0e0;
+      color: #0f0f0f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" id="logo_link"><img src="images/logo.png" alt="Logo" class="logo"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Adventures</a>
+      <a href="site-plan-rafting.html">Plan</a>
+      <a href="contactus.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="msg">
+      <h1>Camp Along the River</h1>
+      <p>Enjoy beautiful riverside camping after your whitewater adventure. Choose from scenic spots located along our top rafting rivers.</p>
+    </section>
+
+    <section class="camping-container">
+      <div class="camp-card">
+        <img src="images/camp_colorado.jpg" alt="Colorado River Camp">
+        <h2>Colorado Riverside Camp</h2>
+        <p>Set up beside the mighty Colorado. Enjoy stargazing, campfires, and serene canyon views.</p>
+        <a class="button" href="rates.html">Book Now</a>
+      </div>
+
+      <div class="camp-card">
+        <img src="images/camp_snake.jpg" alt="Snake River Camp">
+        <h2>Snake River Basecamp</h2>
+        <p>Perfect for families. This camp features picnic areas, gentle river sounds, and shaded forests.</p>
+        <a class="button" href="rates.html">Book Now</a>
+      </div>
+
+      <div class="camp-card">
+        <img src="images/camp_salmon.jpg" alt="Salmon River Wilderness Camp">
+        <h2>Salmon River Wilderness Camp</h2>
+        <p>For those craving solitude, this deep-woods camp offers rugged beauty and absolute peace.</p>
+        <a class="button" href="rates.html">Book Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dry Oar &copy; 2025 - Kaden Watts</p>
+  </footer>
+</body>
+</html>

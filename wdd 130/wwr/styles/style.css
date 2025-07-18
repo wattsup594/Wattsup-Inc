@@ -1,0 +1,144 @@
+/* CSS - styles/style.css */
+:root {
+  --bg-dark: #0f0f0f;
+  --text-light: #e0e0e0;
+  --accent-color: #55d5f1;
+  --button-bg: #710a35;
+  --button-hover: #e0e0e0;
+  --font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.logo {
+  width: 60px;
+}
+
+#hero {
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-img {
+  width: 100%;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.button-box, .msg {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: var(--button-bg);
+  color: var(--text-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+  color: var(--bg-dark);
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  margin: 1rem 0;
+  color: var(--accent-color);
+}
+
+.msg {
+  background-color: #222;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: var(--text-light);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+footer a:hover {
+  color: var(--text-light);
+  text-decoration: underline;
+}
+
+footer .social img {
+  width: 24px;
+  margin: 0 0.5rem;
+  filter: brightness(0.9);
+  transition: filter 0.3s;
+}
+
+footer .social img:hover {
+  filter: brightness(1.2);
+}

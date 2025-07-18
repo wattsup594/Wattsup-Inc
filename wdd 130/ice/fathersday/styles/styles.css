@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  color: #333;
+  line-height: 1.6;
+  background: linear-gradient(45deg, #f3f4f6, #93c5fd);
+  background-size: 400% 400%;
+  animation: pulse-bg 10s ease-in-out infinite;
+  padding-left: 200px; 
+}
+
+
+@keyframes pulse-bg {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  transform: translateX(-190px); 
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+nav:hover {
+  transform: translateX(0);
+}
+
+nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 10px;
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 20px;
+}
+
+nav li {
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav li:hover {
+  background-color: #fbbf24; 
+  color: #1f2937;
+}
+
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: transparent;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #1f2937;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-left: 6px solid #3b82f6;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+section p {
+  color: #333;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  border-top: 5px solid #fbbf24;
+}
