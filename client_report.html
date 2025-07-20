@@ -37,6 +37,41 @@
             word-break: break-all;
             color: blue;
         }
+
+        .link-block {
+            margin-top: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .link-block a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+
+        .link-block img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-bottom: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .link-block img:hover {
+            transform: scale(1.1);
+        }
+
+        .link-block span {
+            display: block;
+            font-size: 0.9rem;
+            margin-top: 4px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
